@@ -53,4 +53,11 @@ package net.imglib2;
  */
 public interface Axis {
 	// NB: Marker interface.
+
+	// BDZ : violating premises in Javadoc. What is an axis without a name? One
+	// could argue that the name is the primary key for an axis.
+
+	void setName(String name);
+
+	String getName();
 }

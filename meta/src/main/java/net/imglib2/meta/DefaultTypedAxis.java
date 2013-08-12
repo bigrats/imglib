@@ -45,6 +45,7 @@ package net.imglib2.meta;
 public class DefaultTypedAxis implements TypedAxis {
 
 	private AxisType type;
+	private String name;
 
 	public DefaultTypedAxis() {
 		this(Axes.unknown());
@@ -66,4 +67,13 @@ public class DefaultTypedAxis implements TypedAxis {
 		this.type = type;
 	}
 
+	@Override
+	public String getName() {
+		return name;
+	}
+
+	@Override
+	public void setName(String name) {
+		this.name = name;
+	}
 }
